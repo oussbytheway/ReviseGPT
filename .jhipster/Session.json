@@ -1,0 +1,45 @@
+{
+  "annotations": {
+    "changelogDate": "20250719190219"
+  },
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "type",
+      "fieldType": "ServiceType",
+      "fieldValues": "CHAT,COURSE,QUIZ"
+    },
+    {
+      "fieldName": "sessionStatus",
+      "fieldType": "SessionStatus",
+      "fieldValues": "ACTIVE,COMPLETED,CANCELLED"
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "updatedAt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "endedAt",
+      "fieldType": "ZonedDateTime"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "Session",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "login",
+      "otherEntityName": "user",
+      "relationshipName": "user",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}
