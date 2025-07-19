@@ -1,0 +1,58 @@
+{
+  "annotations": {
+    "changelogDate": "20250720112058"
+  },
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "generatedResponse",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "generatedFileUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "inputFileUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tokenUsage",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "responseTimeMs",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "feedbackRating",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "ZonedDateTime"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "CourseHistory",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "id",
+      "otherEntityName": "session",
+      "relationshipName": "session",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityField": "login",
+      "otherEntityName": "user",
+      "relationshipName": "user",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

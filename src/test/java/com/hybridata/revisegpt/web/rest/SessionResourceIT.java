@@ -350,7 +350,7 @@ class SessionResourceIT {
         Session partialUpdatedSession = new Session();
         partialUpdatedSession.setId(session.getId());
 
-        partialUpdatedSession.type(UPDATED_TYPE).updatedAt(UPDATED_UPDATED_AT).endedAt(UPDATED_ENDED_AT);
+        partialUpdatedSession.sessionStatus(UPDATED_SESSION_STATUS).createdAt(UPDATED_CREATED_AT);
 
         restSessionMockMvc
             .perform(
