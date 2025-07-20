@@ -23,7 +23,7 @@
             <column name="input_file_url" type="varchar(255)">
                 <constraints nullable="true" />
             </column>
-            <column name="token_usage" type="varchar(255)">
+            <column name="token_usage" type="integer">
                 <constraints nullable="true" />
             </column>
             <column name="response_time_ms" type="integer">
@@ -66,7 +66,7 @@
             <column name="generated_response" type="string"/>
             <column name="generated_file_url" type="string"/>
             <column name="input_file_url" type="string"/>
-            <column name="token_usage" type="string"/>
+            <column name="token_usage" type="numeric"/>
             <column name="response_time_ms" type="numeric"/>
             <column name="feedback_rating" type="numeric"/>
             <column name="created_at" type="date"/>

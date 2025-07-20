@@ -17,7 +17,7 @@ public class CourseHistoryTestSamples {
             .generatedResponse("generatedResponse1")
             .generatedFileUrl("generatedFileUrl1")
             .inputFileUrl("inputFileUrl1")
-            .tokenUsage("tokenUsage1")
+            .tokenUsage(1)
             .responseTimeMs(1)
             .feedbackRating(1);
     }
@@ -28,7 +28,7 @@ public class CourseHistoryTestSamples {
             .generatedResponse("generatedResponse2")
             .generatedFileUrl("generatedFileUrl2")
             .inputFileUrl("inputFileUrl2")
-            .tokenUsage("tokenUsage2")
+            .tokenUsage(2)
             .responseTimeMs(2)
             .feedbackRating(2);
     }
@@ -39,7 +39,7 @@ public class CourseHistoryTestSamples {
             .generatedResponse(UUID.randomUUID().toString())
             .generatedFileUrl(UUID.randomUUID().toString())
             .inputFileUrl(UUID.randomUUID().toString())
-            .tokenUsage(UUID.randomUUID().toString())
+            .tokenUsage(intCount.incrementAndGet())
             .responseTimeMs(intCount.incrementAndGet())
             .feedbackRating(intCount.incrementAndGet());
     }

@@ -58,8 +58,8 @@ class CourseHistoryResourceIT {
     private static final String DEFAULT_INPUT_FILE_URL = "AAAAAAAAAA";
     private static final String UPDATED_INPUT_FILE_URL = "BBBBBBBBBB";
 
-    private static final String DEFAULT_TOKEN_USAGE = "AAAAAAAAAA";
-    private static final String UPDATED_TOKEN_USAGE = "BBBBBBBBBB";
+    private static final Integer DEFAULT_TOKEN_USAGE = 1;
+    private static final Integer UPDATED_TOKEN_USAGE = 2;
 
     private static final Integer DEFAULT_RESPONSE_TIME_MS = 1;
     private static final Integer UPDATED_RESPONSE_TIME_MS = 2;

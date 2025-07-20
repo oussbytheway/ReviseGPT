@@ -18,7 +18,7 @@ public class CourseHistoryDTO implements Serializable {
 
     private String inputFileUrl;
 
-    private String tokenUsage;
+    private Integer tokenUsage;
 
     private Integer responseTimeMs;
 
@@ -62,11 +62,11 @@ public class CourseHistoryDTO implements Serializable {
         this.inputFileUrl = inputFileUrl;
     }
 
-    public String getTokenUsage() {
+    public Integer getTokenUsage() {
         return tokenUsage;
     }
 
-    public void setTokenUsage(String tokenUsage) {
+    public void setTokenUsage(Integer tokenUsage) {
         this.tokenUsage = tokenUsage;
     }
 
@@ -139,7 +139,7 @@ public class CourseHistoryDTO implements Serializable {
             ", generatedResponse='" + getGeneratedResponse() + "'" +
             ", generatedFileUrl='" + getGeneratedFileUrl() + "'" +
             ", inputFileUrl='" + getInputFileUrl() + "'" +
-            ", tokenUsage='" + getTokenUsage() + "'" +
+            ", tokenUsage=" + getTokenUsage() +
             ", responseTimeMs=" + getResponseTimeMs() +
             ", feedbackRating=" + getFeedbackRating() +
             ", createdAt='" + getCreatedAt() + "'" +

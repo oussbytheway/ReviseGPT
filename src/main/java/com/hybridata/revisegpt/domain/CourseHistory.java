@@ -34,7 +34,7 @@ public class CourseHistory implements Serializable {
     private String inputFileUrl;
 
     @Column(name = "token_usage")
-    private String tokenUsage;
+    private Integer tokenUsage;
 
     @Column(name = "response_time_ms")
     private Integer responseTimeMs;
@@ -106,16 +106,16 @@ public class CourseHistory implements Serializable {
         this.inputFileUrl = inputFileUrl;
     }
 
-    public String getTokenUsage() {
+    public Integer getTokenUsage() {
         return this.tokenUsage;
     }
 
-    public CourseHistory tokenUsage(String tokenUsage) {
+    public CourseHistory tokenUsage(Integer tokenUsage) {
         this.setTokenUsage(tokenUsage);
         return this;
     }
 
-    public void setTokenUsage(String tokenUsage) {
+    public void setTokenUsage(Integer tokenUsage) {
         this.tokenUsage = tokenUsage;
     }
 
@@ -211,7 +211,7 @@ public class CourseHistory implements Serializable {
             ", generatedResponse='" + getGeneratedResponse() + "'" +
             ", generatedFileUrl='" + getGeneratedFileUrl() + "'" +
             ", inputFileUrl='" + getInputFileUrl() + "'" +
-            ", tokenUsage='" + getTokenUsage() + "'" +
+            ", tokenUsage=" + getTokenUsage() +
             ", responseTimeMs=" + getResponseTimeMs() +
             ", feedbackRating=" + getFeedbackRating() +
             ", createdAt='" + getCreatedAt() + "'" +
