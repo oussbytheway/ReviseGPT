@@ -369,10 +369,10 @@ class CourseHistoryResourceIT {
         partialUpdatedCourseHistory.setId(courseHistory.getId());
 
         partialUpdatedCourseHistory
+            .generatedFileUrl(UPDATED_GENERATED_FILE_URL)
             .tokenUsage(UPDATED_TOKEN_USAGE)
             .responseTimeMs(UPDATED_RESPONSE_TIME_MS)
-            .feedbackRating(UPDATED_FEEDBACK_RATING)
-            .createdAt(UPDATED_CREATED_AT);
+            .feedbackRating(UPDATED_FEEDBACK_RATING);
 
         restCourseHistoryMockMvc
             .perform(

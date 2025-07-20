@@ -386,10 +386,11 @@ class QuizHistoryResourceIT {
         partialUpdatedQuizHistory.setId(quizHistory.getId());
 
         partialUpdatedQuizHistory
-            .prompt(UPDATED_PROMPT)
-            .generatedResponse(UPDATED_GENERATED_RESPONSE)
+            .inputType(UPDATED_INPUT_TYPE)
             .generatedFileUrl(UPDATED_GENERATED_FILE_URL)
-            .createdAt(UPDATED_CREATED_AT);
+            .inputFileUrl(UPDATED_INPUT_FILE_URL)
+            .tokenUsage(UPDATED_TOKEN_USAGE)
+            .responseTimeMs(UPDATED_RESPONSE_TIME_MS);
 
         restQuizHistoryMockMvc
             .perform(

@@ -360,7 +360,7 @@ class ChatHistoryResourceIT {
         ChatHistory partialUpdatedChatHistory = new ChatHistory();
         partialUpdatedChatHistory.setId(chatHistory.getId());
 
-        partialUpdatedChatHistory.feedbackRating(UPDATED_FEEDBACK_RATING).createdAt(UPDATED_CREATED_AT);
+        partialUpdatedChatHistory.generatedResponse(UPDATED_GENERATED_RESPONSE).responseTimeMs(UPDATED_RESPONSE_TIME_MS);
 
         restChatHistoryMockMvc
             .perform(
